@@ -13,9 +13,25 @@ API documentation is available at <https://docs.enveloop.com/enveloop-api/introd
 [![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/edit/typescript-example-using-sdk-built-with-fern-i3fwkb?file=app.ts&view=editor)
 
 ```typescript
-import { TODO } from "TODO";
+import { EnveloopApiClient } from '@fern-api/enveloop';
+import { Environment } from "@fern-api/enveloop/environments";
 
-const TODO
+const client = new EnveloopApiClient({
+  environment: Environment.Production,
+  token: 'YOUR_TOKEN'
+});
+
+const response = await client.messages.send({
+    "template": "user-welcome",
+    "to": "bob@test.com",
+    "from": "Northwind App <app@northwind.com>",
+    "subject": "Welcome to Northwind",
+    "templateVariables": {
+      "name": "Bob Vance"
+    }
+});
+
+console.log('Received response from Enveloop!', response);
 ```
 
 ## Beta status
