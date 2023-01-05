@@ -6,7 +6,7 @@ The Enveloop Node.js library provides access to the Enveloop API from JavaScript
 
 ## Documentation
 
-API documentation is available at <https://docs.enveloop.com/enveloop-api/introduction-to-the-api>.
+API documentation is available at [https://docs.enveloop.com](/enveloop-api/introduction-to-the-api).
 
 ## Usage
 
@@ -14,21 +14,21 @@ API documentation is available at <https://docs.enveloop.com/enveloop-api/introd
 
 ```typescript
 import { EnveloopApiClient } from '@fern-api/enveloop';
-import { Environment } from "@fern-api/enveloop/environments";
+import { Environment } from '@fern-api/enveloop/environments';
 
 const client = new EnveloopApiClient({
   environment: Environment.Production,
-  token: 'YOUR_TOKEN'
+  token: 'YOUR_TOKEN',
 });
 
 const response = await client.messages.send({
-    "template": "user-welcome",
-    "to": "bob@test.com",
-    "from": "Northwind App <app@northwind.com>",
-    "subject": "Welcome to Northwind",
-    "templateVariables": {
-      "name": "Bob Vance"
-    }
+  template: 'user-welcome',
+  to: 'bob@test.com',
+  from: 'Northwind App <app@northwind.com>',
+  subject: 'Welcome to Northwind',
+  templateVariables: {
+    name: 'Bob Vance',
+  },
 });
 
 console.log('Received response from Enveloop!', response);
