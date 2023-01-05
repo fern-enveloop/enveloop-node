@@ -1,16 +1,16 @@
-# {Company} Node Library
+# Enveloop API Node Library
 
-[![npm shield](https://img.shields.io/npm/v/@fern-api/{company})](https://www.npmjs.com/package/@fern-api/{company})
+[![npm shield](https://img.shields.io/npm/v/@fern-api/enveloop)](https://www.npmjs.com/package/@fern-api/enveloop)
 
-The {Company} Node.js library provides access to the {Company} API from JavaScript/TypeScript.
+The Enveloop Node.js library provides access to the Enveloop API from JavaScript/TypeScript.
 
 ## Documentation
 
-API documentation is available at <{docs_url}>.
+API documentation is available at <https://docs.enveloop.com/enveloop-api/introduction-to-the-api>.
 
 ## Usage
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](TODO)
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/edit/typescript-example-using-sdk-built-with-fern-i3fwkb?file=app.ts&view=editor)
 
 ```typescript
 import { TODO } from "TODO";
